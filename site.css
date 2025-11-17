@@ -1,0 +1,78 @@
+html {
+    font-size: 14px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/*Custom Styling form Index / Layout*/
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    /*align-items: start;*/
+    z-index: 1000;
+    background-image: url('assets/Topo_Pattern_Path_Opactiy_5.png');
+    background-size: cover;
+    color: whitesmoke;
+    background-color: rgb(55, 63, 58);
+}
+
+.logo img{
+    position: absolute;
+    width: 175px;
+    right: 1em;
+}
+nav img{
+    width: 225px;
+}
+
+.city:hover {
+    color: red;
+}
+.side_menu button{
+    color: whitesmoke !important;
+}
+.side_menu button:disabled {
+    color: dimgrey !important;
+}
+
+footer {
+    color: rgb(55, 63, 58);
+    margin-top: -60px;
+}
