@@ -3,8 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{beta} - ReconReport.ai</title>
-    <script type="importmap"></script>
+    <title>ReconReport.ai - {beta}</title>
+    <meta name="description" content="Currently in the {beta} testing and development phases. ReconReport.ai is using AI model data with machine learning predictions to assist with public safety needs.">
+    <meta property="og:title" content="ReconReport.ai - {beta}">
+    <meta property="og:description" content="Currently in the {beta} testing and development phases. ReconReport.ai is using AI model data with machine learning predictions to assist with public safety needs.">
+    <meta property="og:url" content="https://www.reconreport.ai/">
+    <meta property="og:site_name" content="ReconReport.ai - {beta}">
+
     <link rel="shortcut icon" type="image/png" href="assets/R.ico">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/R.ico">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/R.ico">
@@ -34,15 +39,29 @@
     </div>
     <header>
         <div class="d-flex flex-column justify-content-evenly align-content-center align-items-center side_menu">
-            <button class="btn btn-link" href="/"><i class="fa-solid fa-house fa-xl"></i></button>
-            <button class="btn btn-link" disabled href="#map"><i class="fa-solid fa-earth-americas fa-xl"></i></button>
-            <button class="btn btn-link" disabled href="/news"><i class="fa-solid fa-newspaper fa-xl"></i></button>
-            <button class="btn btn-link" href="#funding"><i class="fa-solid fa-seedling fa-xl"></i></button>
+            <button class="active btn btn-link" data-bs-target="#reconSlides" data-bs-slide-to="0"><i class="fa-solid fa-house fa-xl"></i></button>
+            <button class="btn btn-link" data-bs-target="#reconSlides" data-bs-slide-to="1" disabled href="#map"><i class="fa-solid fa-earth-americas fa-xl"></i></button>
+            <button class="btn btn-link" data-bs-target="#reconSlides" data-bs-slide-to="2" disabled href="/news"><i class="fa-solid fa-newspaper fa-xl"></i></button>
+            <button class="btn btn-link" data-bs-target="#reconSlides" data-bs-slide-to="3"><i class="fa-solid fa-seedling fa-xl"></i></button>
         </div>
     </header>
-    <div class="container">
-        <div class="row vh-100 d-flex justify-content-center align-content-center align-items-center">
+    <!-- Carousel -->
+    <div id="reconSlides" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active row vh-100 vw-100 text-center align-content-center align-items-center">
             information coming soon.
+            </div>
+            <div class="carousel-item row vh-100 vw-100 text-center align-content-center align-items-center">
+            information coming soon.
+            </div>
+            <div class="carousel-item row vh-100 vw-100 text-center align-content-center align-items-center">
+            information coming soon.
+            </div>
+            <div class="carousel-item row vh-100 vw-100 text-center align-content-center align-items-center">
+            <p>Interested joining our team as a developer or investor?</p>
+            <p>Shoot me an <a href="mailto: kevinbyrd.sd@gmail.com">email</a>.</p>
+    
+            </div>
         </div>
     </div>
 
