@@ -68,6 +68,11 @@ nav img{
     outline: none;
     box-shadow: none;
 }
+
+.carousel-item .carousel_text{
+    width: 75%;
+    margin: 0 auto;
+}
 .map{
     height: 700px;
     width: auto;
