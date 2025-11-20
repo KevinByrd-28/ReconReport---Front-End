@@ -72,6 +72,11 @@ nav img{
     outline: none;
     box-shadow: none;
 }
+.map{
+    height: 700px;
+    width: auto;
+    margin-left: 4em;
+}
 
 footer {
     color: rgb(55, 63, 58);
