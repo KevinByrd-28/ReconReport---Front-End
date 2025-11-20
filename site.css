@@ -1,13 +1,9 @@
 html {
     font-size: 14px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+
 
 html {
   position: relative;
@@ -77,8 +73,29 @@ nav img{
     width: auto;
     margin-left: 4em;
 }
+.mobile{
+    display: none;
+}
 
 footer {
     color: rgb(55, 63, 58);
     margin-top: -60px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 950px) {
+  .desktop {
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .mobile img{
+    width: 80%;
+  }
 }
